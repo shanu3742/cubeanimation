@@ -13,26 +13,26 @@ console.log(halfOfSize)
      
 
         backgroundImage: `linear-gradient(${box_plate_linear_gradient_first_color},${box_plate_linear_gradient_Second_color} )`,
-        transform: `rotateY(0deg) translateZ(${halfOfSize}px)`
+        transform: `rotateY(0deg) translateZ(${halfOfSize}rem)`
     }
     const span1={
      
 
         backgroundImage: `linear-gradient(${box_plate_linear_gradient_first_color},${box_plate_linear_gradient_Second_color} )`,
-        transform: `rotateY(90deg) translateZ(${halfOfSize}px)`
+        transform: `rotateY(90deg) translateZ(${halfOfSize}rem)`
     }
 
     const span2={
      
 
         backgroundImage: `linear-gradient(${box_plate_linear_gradient_first_color},${box_plate_linear_gradient_Second_color} )`,
-        transform: `rotateY(180deg) translateZ(${halfOfSize}px)`
+        transform: `rotateY(180deg) translateZ(${halfOfSize}rem)`
     }
     const span3={
      
 
         backgroundImage: `linear-gradient(${box_plate_linear_gradient_first_color},${box_plate_linear_gradient_Second_color} )`,
-        transform: `rotateY(270deg) translateZ(${halfOfSize}px)`
+        transform: `rotateY(270deg) translateZ(${halfOfSize}rem)`
     }
    
     const top_Box_Color =top_Color
@@ -72,23 +72,23 @@ const FirstFixedColor =anothercolorchange[1]
     position: absolute;
     top: 0;
     left: 0;
-    width: ${size}px;
-    height: ${size}px;
+    width: ${size}rem;
+    height: ${size}rem;
      background: ${top_Box_Color }; 
-    transform: rotateX(90deg) translateZ(${halfOfSize}px);
+    transform: rotateX(90deg) translateZ(${halfOfSize}rem);
     &::before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
-        width: ${size}px;
-        height: ${size}px;
+        width: ${size}rem;
+        height: ${size}rem;
         background-color: ${box_plate_linear_gradient_Second_color,box_Shadow_Color };
-        transform: translateZ(-${size}px);
+        transform: translateZ(-${size}rem);
         filter: blur(20px);
-        box-shadow: 0 0 ${actualSize}px ${shadow_color}, 0 0 ${actualSize+80}px ${shadow_first_light_color},
-          0 0 ${actualSize+180}px ${shadow_second_light_color}, 0 0 ${actualSize+280}px ${shadow_third_light_color},
-          0 0 ${actualSize+380}px ${shadow_fourth_light_color};
+        box-shadow: 0 0 ${actualSize}rem ${shadow_color}, 0 0 ${actualSize+80}rem ${shadow_first_light_color},
+        0 0 ${actualSize+180}rem ${shadow_second_light_color}, 0 0 ${actualSize+280}rem ${shadow_third_light_color},
+        0 0 ${actualSize+380}rem ${shadow_fourth_light_color};
       }
       `
 
@@ -97,7 +97,7 @@ const FirstFixedColor =anothercolorchange[1]
   
     return (
         <>
-        <div className='cube' style={{width:`${size}px`,height:`${size}px`}} >
+        <div className='cube' style={{width:`${size}rem`,height:`${size}rem`}} >
         <BlurDiv></BlurDiv>
        
             <div>
