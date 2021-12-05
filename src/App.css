@@ -2,8 +2,13 @@
   background-color: rgb(233, 222, 222);
   width: 100vw;
   height: 100vh;
+}
+.color-selector {
+  display: flex;
+  flex-direction: row;
+}
+.Cubecontainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
