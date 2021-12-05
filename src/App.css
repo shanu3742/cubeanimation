@@ -1,7 +1,5 @@
 .App {
-  background-color: rgb(233, 222, 222);
   width: 100vw;
-  height: 100vh;
 }
 .color-selector {
   display: flex;
@@ -11,4 +9,80 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.firstdivCon {
+  background: rgb(226, 225, 225);
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 15px;
+}
+.header {
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.sizeSelect {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.codeblock {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.code-cube {
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 10px gray;
+}
+
+@media only screen and (max-width: 800px) {
+  .color-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstdivCon {
+    background: rgb(226, 225, 225);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 15px;
+  }
+  .codeblock {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .code-cube {
+    background-color: white;
+    font-size: 0.4rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 10px gray;
+  }
 }

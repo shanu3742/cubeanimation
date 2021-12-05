@@ -42,27 +42,33 @@ console.log(state.values[0])
   return (
     <div className='App'>
     <div className='color-selector'>
-    <div>
-    <h1>select Top Plate Color </h1>
+    <div className='firstdivCon'>
+    <div className='header'><h5 > <b>select Top Plate Color</b> </h5></div>
+    
     <SketchPicker color={ topcolor }  onChangeComplete={handleChangeComplete } />
     </div>
-    <div>
-    <h1>select Gradient Color </h1>
+    <div className='firstdivCon'>
+    <div className='header'> <h5> <b>select Gradient Color </b></h5></div>
+   
     <SketchPicker color={ selectrfirst }  onChangeComplete={handleChangeComplete1 } />
     </div>
    
-    <div>
-    <h1>rest plate shadow  Color </h1>
+    <div className='firstdivCon'>
+    <div className='header'> <h5><b>rest plate shadow  Color</b> </h5></div>
+   
     <SketchPicker color={ selectrsecond }  onChangeComplete={handleChangeComplete2} />
     </div>
-    <div>
-    <h1>rest plateColor </h1>
+    <div className='firstdivCon'>
+    <div className='header'>
+    <h5><b>rest plateColor </b></h5>
+    </div>
+ 
     <SketchPicker color={ selectrthird }  onChangeComplete={handleChangeComplete3} />
     </div>
    
     </div>
 
-<div>
+<div className='sizeSelect'>
 <h1>Size selector</h1>
 <Range
 step={0.1}
@@ -100,12 +106,14 @@ renderThumb={({ props }) => (
 
 <Cube top_Color={topcolor} box_plate_linear_gradient_first_color={ selectrsecond }  box_plate_linear_gradient_Second_color={ selectrthird } box_Shadow_Color={selectrfirst} size={state.values[0]}/>
 </div>
-<div>
-<h6>Copy the code given below</h6>
+<div className='codeblock'>
+<h5><b>Copy the code given below</b></h5>
 
+<div className='code-cube'>
 <pre>
-&lt;Cube top_Color={topcolor} box_plate_linear_gradient_first_color={ selectrsecond } box_plate_linear_gradient_Second_color={ selectrthird } box_Shadow_Color={selectrfirst} size={state.values[0]} /&gt;
+&lt;Cube top_Color= '{topcolor}' box_plate_linear_gradient_first_color='{ selectrsecond }' box_plate_linear_gradient_Second_color='{ selectrthird }' box_Shadow_Color='{selectrfirst}' size='{state.values[0]}' /&gt;
 </pre>
+</div>
 
 </div>
   </div>
