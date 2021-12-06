@@ -110,9 +110,21 @@ renderThumb={({ props }) => (
 <h5><b>Copy the code given below</b></h5>
 
 <div className='code-cube'>
+<div className='step1'>
+<h1 style={{color:'red'}}> Step1:Install the npm package</h1>
+<div className='npm'>npm i react-cube-3d-animation</div>
+</div>
+<div className='originalCode'>
+<h1 style={{color:'red'}}> Step2:Use the code given below in your app</h1>
+<div className='npm1'>
+<pre>
+import Cube from 'react-cube-3d-animation'
+</pre>
 <pre>
 &lt;Cube top_Color= '{topcolor}' box_plate_linear_gradient_first_color='{ selectrsecond }' box_plate_linear_gradient_Second_color='{ selectrthird }' box_Shadow_Color='{selectrfirst}' size='{state.values[0]}' /&gt;
 </pre>
+</div>
+</div>
 </div>
 
 </div>
